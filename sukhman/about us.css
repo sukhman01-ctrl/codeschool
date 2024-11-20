@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 2;
+}
+header {
+    top: 0;
+    left: 0;
+    padding:10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width:100%;
+    z-index: 10;
+}
+.logo {
+    background: transparent;
+}
+.logo-img {
+    height: 100px;
+    width: auto; 
+    background: none;
+}
+.nav a{
+    font-family:"Poppins",sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    margin-right: 40px;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:100%;
+    width:0%;
+    transition: 0.2s;
+    background: white;
+    height: 2px;
+}
+.nav a:hover::before{
+    width:100%;
+}
+.about{
+    font-size: 60px;
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: bold;
+}
+section {
+    padding: 50px 50px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #eaeaea;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #f0a500;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.intro p, .vision p, .why-choose p, .courses p, .join-us p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.courses ul, .why-choose ul {
+    font-size: 18px;
+}
+
+.join-us p {
+    font-size: 20px;
+}
+
+
+.contact ul {
+    display: flex;
+    gap: 15px;
+}
+
+.contact ul li a {
+    color: #f0a500;
+    font-size: 18px;
+}
+
+.content-container {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 14px;
+}
+
+ul li {
+    font-size: 14px;
+}
+.explore-btn a{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width:130px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Noto Sans",sans-serif;
+    border:2px solid white;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.explore-btn a:hover{
+    position: absolute;
+    background-color: white;
+    color:black;
+}
+footer{
+    margin-top: 117px;
+    background-color: rgb(191, 184, 184);
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.social-icons{
+    display: flex;  
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(191, 184, 184);
+    margin:10px;
+    border-radius:50%;
+    opacity: 0.8;
+}
+.social-icons a i{
+    font-size:2em;
+    color:black;
+}
+.social-icons a:hover{
+    opacity:1;
+    transition: 0.3s;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav a{
+    color:black;
+    margin:20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.8;
+    font-weight: bold;
+    font-family: 'Noto Sans',sans-serif;
+}
+.footer-nav a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    background-color: rgb(191, 184, 184);
+    padding: 20px;
+    text-align:center;
+}
+.footer-bottom p{
+    color: black;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.review-card {
+    background-color: rgb(191, 184, 184);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Reviewer Photo */
+.reviewer-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Review Content */
+.review-content {
+    padding: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.reviewer-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.reviewer-role {
+    font-size: 14px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+    .review-card {
+        padding: 15px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .reviewer-name {
+        font-size: 16px;
+    }
+
+    .reviewer-role {
+        font-size: 12px;
+    }
+.ok{
+    margin-top: 120px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+header{
+    top: 0;
+    left: 0;
+    padding:10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width:100%;
+    z-index: 10;
+    background-color: black;
+}
+.logo {
+    background: transparent;
+}
+.logo-img {
+    height: 100px;
+    width: auto; 
+    background: none;
+}
+.nav a{
+    font-family:"Poppins",sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    margin-right: 40px;
+    color:white;
+    position: relative;
+    text-decoration: none;
+}
+.nav a::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:100%;
+    width:0%;
+    transition: 0.2s;
+    background: white;
+    height: 2px;
+}
+.nav a:hover::before{
+    width:100%;
+}
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <header class="header">
+        <div class="logo">
+            <a href = "#">
+                <img src="Logo.png" alt="logo" class = "logo-img">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="#">Course</a>
+            <a href="Contact Us.html">Contact Us</a>
+        </div>
+    </header>
+</header>
+<center><h1>Enroll Now</h1>
+    <p>Join our program today and unlock new opportunities!</p></center>
+
+<div class="container">
+    <h2>Enrollment Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        
+        <!-- Email Field -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        
+        <!-- Phone Field -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        
+        <!-- Course Dropdown -->
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select a course</option>
+            <option value="Python for Beginners">Python for Beginners</option>
+            <option value="Advanced Web Development with PHP">Advanced Web Development with PHP</option>
+            <option value="Javascript and React.js">Javascript and React.js</option>
+            <option value="Machine Learning with Python">Machine Learning with Python</option>
+            <option value="Datascience with R">Datascience with R</option>
+            <option value="full-stack Web Development">full-stack Web Development</option>
+            <option value="C Programming for Beginners">C Programming for Beginners</option>
+            <option value="C++ Programming Masterclass">C++ Programming Masterclass</option>
+
+        </select>
+        
+        <!-- Submit Button -->
+        <button type="submit">Enroll Now</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <p>© 2024 Code School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
